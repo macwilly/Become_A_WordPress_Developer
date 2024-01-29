@@ -1,12 +1,17 @@
 <?php
-function greet(string $name, string $color): string
-{
-    $greeting = "<p>Hi, my name is {$name} and my favorite color is {$color}.</p>";
-    return $greeting;
-}
-    echo greet("John", "Blue");
-    echo greet("Jane", "Green");
-?>
+    $names = array("Brad", "Jane", "John", "Meowsalot");
+    $namesCount = count($names);
 
-<h1><?php bloginfo('name'); ?></h1>
-<p><?php bloginfo('description');?></p>
+    //smart way to do this.
+    foreach ($names as $name){
+        echo "<p>Hi, my name is {$name}!</p>";
+    }
+    echo "<hr>";
+    //Wordpress uses a while loop to go through things like Posts and
+    // other content.
+    $count = 0;
+    while ($count < $namesCount){
+        echo "<li>Hi my name is {$names[$count]}.</li>";
+        $count++;
+    }
+?>
