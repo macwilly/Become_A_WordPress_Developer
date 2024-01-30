@@ -4,3 +4,7 @@
     Description: New theme that was build for WordPress practice
     Version: 0.1
 */
+
+body {
+    color: orangered;
+}
