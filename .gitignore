@@ -51,3 +51,5 @@ app/public/wp-content/themes/.DS_Store
 # IDE
 .idea/
 
+
+app/sql/local.sql
